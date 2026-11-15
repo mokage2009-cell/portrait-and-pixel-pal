@@ -38,6 +38,10 @@
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
   --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-chip: var(--chip);
+  --color-bubble-me: var(--bubble-me);
+  --color-bubble-me-foreground: var(--bubble-me-foreground);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
@@ -74,14 +78,19 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --background: oklch(0.975 0.012 240);
+  --foreground: oklch(0.2 0.03 260);
+  --surface: oklch(1 0 0);
+  --chip: oklch(0.94 0.05 210);
+  --bubble-me: oklch(0.6 0.1 225);
+  --bubble-me-foreground: oklch(0.99 0 0);
+  --gradient-send: linear-gradient(135deg, oklch(0.8 0.1 210), oklch(0.72 0.09 225));
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
+  --primary: oklch(0.6 0.1 225);
+  --primary-foreground: oklch(0.99 0 0);
   --secondary: oklch(0.968 0.007 247.896);
   --secondary-foreground: oklch(0.208 0.042 265.755);
   --muted: oklch(0.968 0.007 247.896);
@@ -153,3 +162,5 @@
     color: var(--color-foreground);
   }
 }
+
+.bg-send { background-image: var(--gradient-send); }
