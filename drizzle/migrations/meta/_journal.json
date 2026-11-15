@@ -8,6 +8,13 @@
       "when": 1794731546228,
       "tag": "0000_chat_app",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1794731879827,
+      "tag": "0001_allow_chat_image_deletion",
+      "breakpoints": true
     }
   ]
 }
