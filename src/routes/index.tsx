@@ -14,6 +14,7 @@ import { ProfileSwitcher, type SavedProfile } from "@/components/ProfileSwitcher
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
+      { name: "robots", content: "noindex, nofollow" },
       { title: "チャット｜プロフィールとチャット欄" },
       { name: "description", content: "プロフィールを設定して、画像も送れるチャット欄で会話しよう。" },
       { property: "og:title", content: "チャット｜プロフィールとチャット欄" },
