@@ -102,7 +102,7 @@ function ChatPage() {
               </button>
               {m.image_url ? (
                 urls[m.image_url] ? (
-                  <img src={urls[m.image_url]} alt="送信画像" onClick={() => setViewImg(urls[m.image_url!])} className="h-28 w-28 cursor-pointer rounded-xl object-cover" />
+                  <img src={urls[m.image_url]} alt="送信画像" onClick={() => setViewImg(urls[m.image_url!] ?? null)} className="h-28 w-28 cursor-pointer rounded-xl object-cover" />
                 ) : <div className="h-28 w-28 rounded-xl bg-muted" />
               ) : (
                 <div className={`max-w-[80%] whitespace-pre-wrap break-words rounded-2xl px-4 py-2 ${mine ? "bg-bubble-me text-bubble-me-foreground" : "bg-surface"}`}>{m.content}</div>
